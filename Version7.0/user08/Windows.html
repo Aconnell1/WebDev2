@@ -28,11 +28,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="Version7.0/user08/JS/SampleJS.js"></script>
     <script src="JS/hide.js"></script>
+    <script>var myWindow;
+        function openWin() {
+            myWindow = window.open("https://en.wikipedia.org/wiki/Microsoft_Windows");
+        }</script>
+
+
 
 </head>
 
 <body>
-    <div class="window">
+    <div class="window" style="margin: 60px; margin-left:15vw; width: 760px">
         <div class="title-bar">
             <div class="title-bar-text">Command Prompt</div>
             <div class="title-bar-controls">
@@ -48,7 +54,7 @@
           </pre>
         </div>
     </div>
-    <div id="myDIV" class="window" style="margin: 60px; margin-top: 15vw; margin-left:50vw; width: 250px">
+    <div id="myDIV" class="window" style="margin: 60px; margin-top: 12vw; margin-left:50vw; width: 250px">
         <div class="title-bar">
             <div class="title-bar-text">
                 About
@@ -90,14 +96,13 @@
             </section>
             <section class="f-item tiles-con">
                 <div class="tiles-sec tiles-sec-1">
-                    <header>
-                        <h3>Life at a glance</h3>
-                    </header>
+
                     <div class="tiles-1">
                         <div class="g-item g-small">
                             <button onclick="myFunction()">Open</button>
                         </div>
                         <div class="g-item g-large">
+                            <button onclick="openWin()">More Info</button>
                         </div>
                         <div class="g-item g-large">
                         </div>
