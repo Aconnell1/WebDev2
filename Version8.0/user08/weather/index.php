@@ -70,15 +70,6 @@ span.min-temperature {
 </head>
 <body>
 
-<?php
-if($data->wind->speed > "5") {
-    echo '<body style="background-color:orange;">';
-}
-else{
-    echo '<body style ="background-color:green;">';
-}
-
-?>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
